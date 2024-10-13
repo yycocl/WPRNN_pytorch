@@ -3,8 +3,8 @@ class L1_Charbonnier_entropy(nn.Module):
 
     def __init__(self):
         super(L1_Charbonnier_entropy, self).__init__()
-        self.lambda_l = 1e4
-        self.lambda_h = 1e4
+        self.lambda_l = 1
+        self.lambda_h = 1
         self.eps = 1e-14
 
     def forward(self, X, Y):
